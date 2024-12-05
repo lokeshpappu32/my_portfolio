@@ -734,6 +734,11 @@ footer.social_links {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  #hero img {
+    display: none;
+  }
+}
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
