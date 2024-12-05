@@ -248,4 +248,15 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();  // Disable right-click context menu
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === "F12" || 
+        (event.ctrlKey && (event.key === "U" || event.key === "I"))) {
+      event.preventDefault();
+    }
+  });
+
 })();

@@ -93,7 +93,7 @@
         <br>
         <div class="w-50 p">
           <p style="font-size:18px; font-weight:lighter;">
-            I am a software developer with over a year of professional experience in Django full-stack development, Python programming, and Machine Learning. I am currently working at Easy Cloud Software Solutions, where I have had the opportunity to contribute to significant projects.
+            I am a software developer with over a year of professional experience in Django full-stack development, Python programming, and Machine Learning. I am currently working at Moneybloom, where I have had the opportunity to contribute to significant projects.
           </p>
         </div>
       </div>
@@ -1070,36 +1070,34 @@
           </div>
         </div>
 
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-          <div class="row gy-4">
-
-            <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="" style="border-color: rgba(58, 57, 57, 0.205) !important;">
+        <!-- <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300"> -->
+          <form action="https://formspree.io/f/myzyvgwj" method="POST" id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required="" style="border-color: rgba(58, 57, 57, 0.205) !important;">
+              </div>
+              
+              <div class="col-md-6">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required="" style="border-color: rgba(58, 57, 57, 0.205) !important;">
+              </div>
+              
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="subject" placeholder="Subject" required="" style="border-color: rgba(58, 57, 57, 0.205) !important;">
+              </div>
+              
+              <div class="col-md-12">
+                <textarea class="form-control" name="message" rows="6" placeholder="Message" required="" style="border-color: rgba(58, 57, 57, 0.205) !important;"></textarea>
+              </div>
+          
+              <div class="col-md-12 text-center">
+                <div class="loading" style="display: none;">Loading</div>
+                <div class="error-message" style="display: none;"></div>
+                <div class="sent-message" style="display: none;">Your message has been sent. Thank you!</div>
+          
+                <button type="submit">Send Message</button>
+              </div>
             </div>
-            
-            <div class="col-md-6">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="" style="border-color: rgba(58, 57, 57, 0.205) !important;">
-            </div>
-            
-            <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="" style="border-color: rgba(58, 57, 57, 0.205) !important;">
-            </div>
-            
-            <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required="" style="border-color: rgba(58, 57, 57, 0.205) !important;"></textarea>
-            </div>
-
-            <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
-            </div>
-
-          </div>
-        </form><!-- End Contact Form -->
-
+          </form>
       </div>
 
     </section><!-- /Contact Section -->
